@@ -1,0 +1,10 @@
+^C:\USERS\MINEC\DESKTOP\WATERMARK_PROJECT\CMAKEBUILD\CMAKEFILES\77D8FEFC80793066128F237359F7EF5A\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/minec/Desktop/Watermark_Project -BC:/Users/minec/Desktop/Watermark_Project/cmakebuild --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/minec/Desktop/Watermark_Project/cmakebuild/WatermarkProject.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
